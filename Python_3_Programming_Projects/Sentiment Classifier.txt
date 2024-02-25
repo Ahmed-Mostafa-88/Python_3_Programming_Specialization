@@ -1,0 +1,134 @@
+def strip_punctuation(word):
+    punctuation_chars = ["'", '"', ",", ".", "!", ":", ";", '#', '@']
+    
+    # Remove punctuation characters from the word
+    for char in punctuation_chars:
+        word = word.replace(char, '')
+    
+    return word
+
+punctuation_chars = ["'", '"', ",", ".", "!", ":", ";", '#', '@']
+# list of positive words to use
+positive_words = []
+with open("positive_words.txt") as pos_f:
+    for lin in pos_f:
+        if lin[0] != ';' and lin[0] != '\n':
+            positive_words.append(lin.strip())
+
+def get_pos(text):
+    # Convert the input text to lowercase for case-insensitive matching
+    text = text.lower()
+    
+    # Initialize a count for positive words
+    positive_count = 0
+    
+    # Tokenize the text into words
+    words = text.split()
+    
+    # Iterate through the words and count positive words
+    for word in words:
+        # Remove punctuation from the word using the strip_punctuation function
+        clean_word = strip_punctuation(word)
+        
+        # Check if the cleaned word is in the positive_words list
+        if clean_word in positive_words:
+            positive_count += 1
+    
+    return positive_count
+
+punctuation_chars = ["'", '"', ",", ".", "!", ":", ";", '#', '@']
+
+negative_words = []
+with open("negative_words.txt") as pos_f:
+    for lin in pos_f:
+        if lin[0] != ';' and lin[0] != '\n':
+            negative_words.append(lin.strip())
+
+def strip_punctuation(word):
+    punctuation_chars = ["'", '"', ",", ".", "!", ":", ";", '#', '@']
+    
+    # Remove punctuation characters from the word
+    for char in punctuation_chars:
+        word = word.replace(char, '')
+    
+    return word
+            
+            
+            
+
+            
+def get_neg(text):
+    # Convert the input text to lowercase for case-insensitive matching
+    text = text.lower()
+    
+    # Initialize a count for negative words
+    negative_count = 0
+    
+    # Tokenize the text into words
+    words = text.split()
+    
+    # Iterate through the words and count negative words
+    for word in words:
+        # Remove punctuation from the word using the strip_punctuation function
+        clean_word = strip_punctuation(word)
+        
+        # Check if the cleaned word is in the negative_words list
+        if clean_word in negative_words:
+            negative_count += 1
+    
+    return negative_count
+
+
+# Define the strip_punctuation function
+def strip_punctuation(word):
+    punctuation_chars = ["'", '"', ",", ".", "!", ":", ";", '#', '@']
+    for char in punctuation_chars:
+        word = word.replace(char, '')
+    return word
+
+# Define the get_pos function
+def get_pos(text):
+    text = text.lower()
+    positive_count = 0
+    words = text.split()
+    for word in words:
+        clean_word = strip_punctuation(word)
+        if clean_word in positive_words:
+            positive_count += 1
+    return positive_count
+
+# Define the get_neg function
+def get_neg(text):
+    text = text.lower()
+    negative_count = 0
+    words = text.split()
+    for word in words:
+        clean_word = strip_punctuation(word)
+        if clean_word in negative_words:
+            negative_count += 1
+    return negative_count
+
+# Read data from project_twitter_data.csv and create resulting_data.csv
+with open('project_twitter_data.csv', 'r') as input_file:
+    # Read the lines of the input file
+    lines = input_file.readlines()
+
+# ...
+
+# Create or overwrite resulting_data.csv
+with open('resulting_data.csv', 'w') as output_file:
+    # Write headers to the output CSV file with spaces after commas
+    output_file.write("Number of Retweets, Number of Replies, Positive Score, Negative Score, Net Score\n")
+    
+    # Process each row in the input CSV (skip the header)
+    for line in lines[1:]:
+        row = line.strip().split(',')
+        tweet_text = row[0]
+        num_retweets = int(row[1])
+        num_replies = int(row[2])
+        positive_score = get_pos(tweet_text)
+        negative_score = get_neg(tweet_text)
+        net_score = positive_score - negative_score
+        
+        # Write the data to the output CSV with spaces after commas
+        output_file.write(f"{num_retweets}, {num_replies}, {positive_score}, {negative_score}, {net_score}\n")
