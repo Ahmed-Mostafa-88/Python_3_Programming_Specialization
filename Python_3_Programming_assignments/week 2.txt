@@ -1,0 +1,77 @@
+
+my_str = "MICHIGAN"
+for ch in my_str:
+    print(ch)
+
+-----------------------------------------------------------------------------------------------
+
+several_things = ["hello", 2, 4, 6.0, 7.5, 234352354, "the end", "", 99]
+for w in several_things:
+    print(w)
+
+for w in several_things:
+    print(type(w)) 
+
+-------------------------------------------------------------------------------------------
+
+str_list = ["hello", "", "goodbye", "wonderful", "I love Python"]
+
+for w in str_list:
+    print(len(w))
+
+-----------------------------------------------------------------------------------------------
+
+
+original_str = "The quick brown rhino jumped over the extremely lazy fox."
+num_chars = 0
+
+for char in original_str:
+    num_chars += 1
+
+print(num_chars)
+-------------------------------------------------------------------------------------------------
+
+addition_str = "2+5+10+20"
+a1=addition_str.split("+")
+sum_val=0
+for w in a1 :
+    sum_val+=int(w)
+print(sum_val)
+------------------------------------------------------------------------------------------------
+week_temps_f = "75.1,77.7,83.2,82.5,81.0,79.5,85.7"
+a1=week_temps_f.split(",")
+suum=0
+for w in a1:
+    suum+=float(w)
+avg_temp= suum/len(a1)
+print(avg_temp)
+
+
+
+-------------------------------------------------------------------------------------------------
+
+nums=list(range(68))
+print(nums)
+---------------------------------------------------------------------------------------------------
+original_str = "The quick brown rhino jumped over the extremely lazy fox"
+
+# Split the original string into a list of words
+words_list = original_str.split()
+
+# Create an empty list to store the word lengths
+num_words_list = []
+
+# Iterate over each word in the list and append its length to num_words_list
+for word in words_list:
+    num_words_list.append(len(word))
+
+# Print the resulting list
+print(num_words_list)
+
+
+--------------------------------------------------------------------------------------------------
+
+lett=""
+for w in range(7):
+    lett+="b"
+    

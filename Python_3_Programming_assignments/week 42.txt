@@ -1,0 +1,148 @@
+def sublist(lst):
+    l=[]
+    i=0
+    while i < len(lst) and lst[i] != 5 :
+        l.append(lst[i])
+        i+=1
+    return l   
+------------------------------------------------------------------------------------------------------------------
+def check_nums (l):
+    s=[]
+    i=0
+    while i<len(l) and l[i]!=7:
+        s.append(l[i])
+        i+=1
+    return s    
+------------------------------------------------------------------------------------------------------------------
+def sublist(lst):
+    l=[]
+    i= 0
+    while i < len(lst) and lst[i] != "STOP":
+        l.append(lst[i])
+        i+=1
+    return l   
+----------------------------------------------------------------------------------------------------------------------
+
+def stop_at_z(lst):
+    l=[]
+    i= 0
+    while i < len(lst) and lst[i] != "z":
+        l.append(lst[i])
+        i+=1
+    return l   
+---------------------------------------------------------------------------------------------------------------
+sum1 = 0
+lst = [65, 78, 21, 33]
+
+index = 0
+sum2 = 0
+
+while index < len(lst):
+    sum2 = sum2 + lst[index]
+    index = index + 1
+
+print("sum2:", sum2)
+print("sum1:", sum1)
+--------------------------------------------------------------------------------------------------------------------
+def beginning (lst):
+    l=[]
+    i= 0
+    while i < 10 and lst[i] != "bye":
+        l.append(lst[i])
+        i+=1
+    return l   
+=====================================================================================================================================================================================================================================================================================================================================
+
+
+
+def mult(a,b=6):
+    return a*b
+--------------------------------------------------------------------------    
+def greeting(greeting, name="Hello ", excl="!"):
+    return name +greeting +  excl
+
+print(greeting("Bob"))
+print(greeting(""))
+print(greeting("Bob", excl="!!!"))
+--------------------------------------------------------------------------
+def sum(intx, intz=5 ):
+    return intz + intx
+--------------------------------------------------------------------------
+def test(a, b="True" , dict1={2:3, 4:5, 6:8}):
+    if b=="True":
+        if a in dict1:
+            return dict1[a]
+        else :
+            return None
+    else :
+        return False
+---------------------------------------------------------------------------    
+def checkingIfIn (s,direction=True,d={'apple': 2, 'pear': 1, 'fruit': 19, 'orange': 5, 'banana': 3, 'grapes': 2, 'watermelon': 7}):
+    if direction:
+        if s in d:
+            return True
+        else :
+            return False
+    else :
+        if s not in d:
+            return True
+        else :
+            return False
+------------------------------------------------------------------------------
+
+def checkingIfIn(a, direction = True, d = {'apple': 2, 'pear': 1, 'fruit': 19, 'orange': 5, 'banana': 3, 'grapes': 2, 'watermelon': 7}):
+    if direction == True:
+        if a in d:
+            return d[a]
+        else:
+            return False
+    else:
+        if a not in d:
+            return True
+        else:
+            return d[a]
+
+# Call the function so that it returns False and assign that function call to the variable c_false
+c_false=checkingIfIn('p')
+# Call the fucntion so that it returns True and assign it to the variable c_true
+c_true=checkingIfIn('p',direction = False)
+# Call the function so that the value of fruit is assigned to the variable fruit_ans
+fruit_ans=checkingIfIn('fruit')
+# Call the function using the first and third parameter so that the value 8 is assigned to the variable param_check
+param_check = checkingIfIn('param_check', d={'param_check': 8})
+
+    
+    
+    
+
+
+
+    
+    
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    

@@ -1,0 +1,39 @@
+class Bike :
+    def __init__(self,color,price):
+        self.color=color
+        self.price=price
+
+testOne=Bike("blue",89.99)
+print(testOne)
+
+testTwo=Bike('purple',25.0)
+print(testTwo)
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+class AppleBasket :
+    def __init__(self,color,number):
+        self.apple_color=color
+        self.apple_quantity=number
+    def increase(self):
+        self.apple_quantity+=1
+    def __str__ (self):
+        return f"A basket of {self.apple_quantity} {self.apple_color} apples."
+        
+        
+    
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+class BankAccount:
+    def __init__(self, name, amt):
+        self.nam=str(name)
+        self.money=int(amt)
+    def __str__(self):
+        return f"Your account, {self.nam}, has {self.money} dollars."
+    
+t1=BankAccount("Bob", 100)  
+print(t1)        
+
+

@@ -1,0 +1,11 @@
+ 0 is not returned if the function is given an empty list.
+ a list with more than one item does not provide the correct response.
+ No
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+C. the attributes/instance variables are not correctly assigned in the constructor
+D. the method study does not increase self.knowledge
+
+A. Yes

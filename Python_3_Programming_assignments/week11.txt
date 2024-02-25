@@ -1,0 +1,70 @@
+f=open("travel_plans.txt","r")
+a=f.read()
+num=len(a)
+--------------------------------------------------------------------------------------------------------------
+a=open("emotion_words.txt","r")
+
+num_words=0
+for i in a:
+    w=i.strip().split()
+    num_words+=len(w)
+-----------------------------------------------------------------------------------------------------------------
+f=open("school_prompt.txt","r")
+a=f.readlines()
+num_lines=len(a)
+
+---------------------------------------------------------------------------------------------------------------------
+f=open("school_prompt.txt","r")
+beginning_chars=f.read(30)
+---------------------------------------------------------------------------------------------
+f=open("travel_plans.txt","r")
+first_chars=f.read(33)
+-----------------------------------------------------------------------------------------------
+f=open("school_prompt.txt","r")
+three=[]
+a=f.readlines(f)
+for i in a:
+    words = i.strip().split()
+    three.append(words[2])
+------------------------------------------------------------------------------------------------------------------
+f=open("emotion_words.txt","r")
+emotions=[]
+a=f.readlines(f)
+for i in a:
+    words = i.strip().split()
+    emotions.append(words[0])
+--------------------------------------------------------------------------------------------------------------------
+f=open("school_prompt.txt","r")
+p_words=[]
+a=f.readlines(f)
+for i in a:
+    words = i.strip().split()
+    for s in words:
+        if "p" in s:
+            p_words.append(s)
+            
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

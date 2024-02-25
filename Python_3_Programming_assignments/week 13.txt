@@ -1,0 +1,136 @@
+nested = [['dog', 'cat', 'horse'], ['frog', 'turtle', 'snake', 'gecko'], ['hamster', 'gerbil', 'rat', 'ferret']]
+
+output = nested[1][2]
+
+---------------------------------------------------------------------------------------------------------------------------------------
+lst = [['apple', 'orange', 'banana'], [5, 6, 7, 8, 9.9, 10], ['green', 'yellow', 'purple', 'red']]
+#Test to see if 'yellow' is in the third list of lst. Save to variable ``yellow``
+if 'yellow' in lst[2]:
+    yellow = True
+    print(yellow)
+#Test to see if 4 is in the second list of lst. Save to variable ``four``
+if 4 in lst[1]:
+    four = True
+else:
+    four = False
+print(four)
+#Test to see if 'orange' is in the first element of lst. Save to variable ``orange``
+if 'orange' in lst[0]:
+    orange = True
+else:
+    orange = False
+print(orange)
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+L = [[5, 8, 7], ['hello', 'hi', 'hola'], [6.6, 1.54, 3.99], ['small', 'large']]
+# Test if 'hola' is in the list L. Save to variable name test1
+if 'hola' in L:
+    test1 = True
+else:
+    test1 = False
+print(test1)
+# Test if [5, 8, 7] is in the list L. Save to variable name test2
+if [5, 8, 7] in L:
+    test2 = True
+else:
+    test2 = False
+print(test2)
+# Test if 6.6 is in the third element of list L. Save to variable name test3
+if 6.6 in L[2]:
+    test3 = True
+else:
+    test3 = False
+print(test3)
+
+------------------------------------------------------------------------------------------------------------------------------------------
+nested = {'data': ['finding', 23, ['exercises', 'hangout', 34]], 'window': ['part', 'whole', [], 'sum', ['math', 'calculus', 'algebra', 'geometry', 'statistics',['physics', 'chemistry', 'biology']]]}
+# Check to see if the string 'data' is a key in nested, if it is, assign True to the variable data, otherwise assign False.
+if "data" in nested:
+    data = True
+else:
+    data = False
+print(data)
+# Check to see if the integer 24 is in the value of the key data, if it is then assign to the variable twentyfour the value of True, otherwise False.
+if 24 in nested['data']:
+    twentyfour = True
+else:
+    twentyfour = False
+print(twentyfour)
+# Check to see that the string 'whole' is not in the value of the key window. If it's not, then assign to the variable whole the value of True, otherwise False.
+if 'whole' not in nested['window']:
+    whole = True
+else:
+    whole = False
+print(whole)
+# Check to see if the string 'physics' is a key in the dictionary nested. If it is, assign to the variable physics, the value of True, otherwise False.
+if 'physics' in nested:
+    physics = True
+else:
+    physics = False
+print(physics)
+
+--------------------------------------------------------------------------------------------------------------------------------------
+nested_d = {'Beijing':{'China':51, 'USA':36, 'Russia':22, 'Great Britain':19}, 'London':{'USA':46, 'China':38, 'Great Britain':29, 'Russia':22}, 'Rio':{'USA':35, 'Great Britain':22, 'China':20, 'Germany':13}}
+london_gold= nested_d['London']['Great Britain']
+
+----------------------------------------------------------------------------------------------------------------------------------
+sports = {'swimming': ['butterfly', 'breaststroke', 'backstroke', 'freestyle'], 'diving': ['springboard', 'platform', 'synchronized'], 'track': ['sprint', 'distance', 'jumps', 'throws'], 'gymnastics': {'women':['vault', 'floor', 'uneven bars', 'balance beam'], 'men': ['vault', 'parallel bars', 'floor', 'rings']}}
+# Assign the string 'backstroke' to the name v1
+v1=sports['swimming'][2]
+# Assign the string 'platform' to the name v2
+v2=sports['diving'][1]
+# Assign the list ['vault', 'floor', 'uneven bars', 'balance beam'] to the name v3
+v3=sports['gymnastics']['women']
+# Assign the string 'rings' to the name v4
+v4=sports['gymnastics']['men'][3]
+
+--------------------------------------------------------------------------------------------------------------------------------------
+nested_d = {'Beijing':{'China':51, 'USA':36, 'Russia':22, 'Great Britain':19}, 'London':{'USA':46, 'China':38, 'Great Britain':29, 'Russia':22}, 'Rio':{'USA':35, 'Great Britain':22, 'China':20, 'Germany':13}}
+US_count = []
+# Iterate through the Olympics
+for olympics, medal_count in nested_d.items():
+    # Check if 'USA' is present in the medal count dictionary for the current Olympics
+    if 'USA' in medal_count:
+        US_count.append(medal_count['USA'])
+    else:
+        # If 'USA' is not present, append 0 to indicate no medals for that Olympics
+        US_count.append(0)
+# US_count now contains the medal count for the USA in each of the three Olympics
+print(US_count)
+
+--------------------------------------------------------------------------------------------------------------------------------------
+l_of_l = [['purple', 'mauve', 'blue'], ['red', 'maroon', 'blood orange', 'crimson'], ['sea green', 'cornflower', 'lavender', 'indigo'], ['yellow', 'amarillo', 'mac n cheese', 'golden rod']]
+third=[]
+for s in l_of_l :
+    third.append(s[2])
+    
+-----------------------------------------------------------------------------------------------------------------------------------
+
+athletes = [['Phelps', 'Lochte', 'Schooling', 'Ledecky', 'Franklin'], ['Felix', 'Bolt', 'Gardner', 'Eaton'], ['Biles', 'Douglas', 'Hamm', 'Raisman', 'Mikulak', 'Dalton']]
+t=[]
+other=[]
+for i in athletes:
+     for s in i:
+            if "t" in s.lower() :
+                       t.append(s)
+            else :
+                other.append(s)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
