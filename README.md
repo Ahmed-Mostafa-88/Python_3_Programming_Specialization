@@ -2,6 +2,8 @@
 
 This repository contains materials and projects completed as part of the Python 3 Programming Specialization.
 
+![Python 3 Programming Specialization Certificate](CERTIFICATE_LANDING_PAGE~AKG7Y739SBJ3.jpeg)
+
 ## Overview
 
 The Python 3 Programming Specialization is a comprehensive series of courses designed to provide learners with a strong foundation in Python programming. Through a combination of lectures, quizzes, and hands-on projects, participants gain practical experience and knowledge in various aspects of Python development.
