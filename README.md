@@ -2,7 +2,7 @@
 
 This repository contains materials and projects completed as part of the Python 3 Programming Specialization.
 
-![Python 3 Programming Specialization Certificate](CERTIFICATE_LANDING_PAGE~AKG7Y739SBJ3.jpeg)
+![CERTIFICATE_LANDING_PAGE~AKG7Y739SBJ3](https://github.com/Ahmed-Mostafa-88/Python_3_Programming_Specialization/assets/144740078/be4af498-b433-4a04-ad1a-472d4ed29347)
 
 ## Overview
 
